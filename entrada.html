@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bem-vindo à Julia Souza Store</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #a7d5db;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      font-family: 'Arial', sans-serif;
+      color: white;
+    }
+
+    .logo {
+      width: 200px;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    h1 {
+      opacity: 0;
+      font-size: 1.8rem;
+      margin-top: 20px;
+      animation: fadeIn 2s ease-in-out forwards;
+      animation-delay: 1s;
+    }
+
+    .loader {
+      margin-top: 30px;
+      border: 5px solid #fff;
+      border-top: 5px solid #555;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 4000);
+  </script>
+</head>
+<body>
+  <img src="logo.png" alt="Logo Julia Souza Store" class="logo" />
+  <h1>Seja bem-vindo(a) à Julia Souza Store</h1>
+  <div class="loader"></div>
+</body>
+</html>
